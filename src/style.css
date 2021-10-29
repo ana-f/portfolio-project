@@ -11,7 +11,7 @@ h3 {
 h4,
 p,
 footer,
-.home-link {
+.home-links {
   font-family: "Poppins", sans-serif;
 }
 
@@ -22,6 +22,7 @@ h1 {
 h2 {
   border-top: 1px solid black;
   font-size: 56px;
+  padding-left: 15px;
 }
 
 h4 {
@@ -31,7 +32,7 @@ h4 {
 p {
   font-size: 16px;
   line-height: 30px;
-  padding-left: 15px;
+  padding: 15px;
 }
 
 footer {
@@ -52,7 +53,7 @@ footer {
 .h-link {
   display: inline-block;
   font-size: 14px;
-  padding: 15px 30px;
+  padding: 10px 30px;
   color: white;
   background-color: black;
   text-decoration: none;
@@ -61,4 +62,35 @@ footer {
 
 .h-link:hover {
   color: var(--color-1);
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 58px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  .home-intro {
+    padding: 45px 15px;
+  }
+
+  .home-links {
+    display: none;
+  }
 }
