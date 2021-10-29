@@ -53,6 +53,6 @@ footer {
   border-radius: 4px;
 }
 
-.hlink:hover {
+.h-link:hover {
   color: var(--color-1);
 }
