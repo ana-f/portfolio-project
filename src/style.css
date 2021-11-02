@@ -1,5 +1,12 @@
 :root {
-  --color-1: #9cf6f6;
+  --color-1: #28b5b5;
+  --color-2: #fefbf3;
+  --color-3: #4b778d;
+  --color-4: #dbf6e9;
+}
+
+body {
+  margin: 0 5px;
 }
 
 h1,
@@ -10,58 +17,69 @@ h3 {
 
 h4,
 p,
-footer,
-.home-links {
+footer {
   font-family: "Poppins", sans-serif;
 }
 
 h1 {
   font-size: 96px;
+  color: var(--color-2);
 }
 
 h2 {
-  border-top: 1px solid black;
+  color: var(--color-3);
   font-size: 56px;
-  padding-left: 15px;
+  padding: 15px;
+}
+
+h3 {
+  font-size: 42px;
+  color: var(--color-3);
 }
 
 h4 {
   font-size: 24px;
+  color: var(--color-2);
 }
 
 p {
   font-size: 16px;
   line-height: 30px;
-  padding: 15px;
+  padding: 30px;
 }
 
 footer {
   font-size: 14px;
   text-align: center;
+  color: var(--color-3);
+  background-color: var(--color-2);
+  padding: 15px 0;
+  border-radius: 4px;
+}
+
+.navbar-color {
+  background-color: var(--color-4);
+  border-radius: 4px;
 }
 
 .home-intro {
   background-color: var(--color-1);
   text-align: center;
-  padding: 90px 15px;
-}
-
-.home-links {
-  text-align: center;
+  padding: 90px 0;
+  border-radius: 4px;
 }
 
 .h-link {
-  display: inline-block;
   font-size: 14px;
-  padding: 10px 30px;
-  color: white;
-  background-color: black;
+  padding: 10px 40px;
+  color: var(--color-2);
+  background-color: var(--color-1);
   text-decoration: none;
   border-radius: 4px;
 }
 
 .h-link:hover {
-  color: var(--color-1);
+  color: var(--color-3);
 }
 
 @media (max-width: 600px) {
@@ -71,6 +89,11 @@ footer {
 
   h2 {
     font-size: 28px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 22px;
   }
 
   h4 {
@@ -80,6 +103,8 @@ footer {
   p {
     font-size: 14px;
     line-height: 25px;
+    padding: 0 15px;
+    text-align: center;
   }
 
   footer {
@@ -88,9 +113,5 @@ footer {
 
   .home-intro {
     padding: 45px 15px;
-  }
-
-  .home-links {
-    display: none;
   }
 }
