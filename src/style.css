@@ -82,16 +82,18 @@ footer {
 
 .secondary-link {
   font-size: 14px;
-  padding: 10px 40px;
+  padding: 10px 35px;
   color: var(--color-2);
   background-color: var(--color-1);
   text-decoration: none;
   border-radius: 4px;
+  transition: all 100ms ease-in-out;
 }
 
 .secondary-link:hover {
-  background-color: var(--color-3);
-  color: var(--color-2);
+  background-color: var(--color-2);
+  color: var(--color-1);
+  border: 1px solid var(--color-1);
 }
 
 .img-border {
@@ -146,5 +148,11 @@ footer {
 
   .home-intro {
     padding: 45px 15px;
+  }
+
+  .secondary-link {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
   }
 }
